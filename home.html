@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiraboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+  <header>
+<div class="container">
+    <h1><a href="/" class="logo">Jiraboard</a></h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/auth/logout">Logout</a>
+            </li>
+            <li>
+                <a href="/profile">Profile</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+</header>
+<body>
+  <section>
+    <div class="TopBoard">
+            <div class="Team">
+                <a href="/team/<%=team._id%>"><h2>Team Name</h2></a>
+                <div class="task-container" style="overflow:scroll; width:350px; height:200px;">
+                     <div class="tasklist">
+                        <div class="task">
+                            <a href="/team/<%=team._id%>/project/<%= project._id %>">Project names</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Team">
+                <a href="/team/<%=team._id%>"><h2>Team Name</h2></a>
+                <div class="task-container" style="overflow:scroll; width:350px; height:200px;">
+                     <div class="tasklist">
+                        <div class="task">
+                            <a href="/team/<%=team._id%>/project/<%= project._id %>">Project names</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Team">
+                <a href="/team/<%=team._id%>"><h2>Team Name</h2></a>
+                <div class="task-container" style="overflow:scroll; width:350px; height:200px;">
+                     <div class="tasklist">
+                        <div class="task">
+                            <a href="/team/<%=team._id%>/project/<%= project._id %>">Project names</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="createboard">  <!-- Create a new board-->
+                <h3>Create a new Team</h3>
+                <a href="/team/create">Create Team</a>
+                </div>
+
+        </section>
+</body>
+<footer>
+    <div>
+        <p>The ultimate project management tool for streamlined task tracking, collaboration, and progress monitoring.
+            Simplify project organization, assign tasks. Boost productivity, faster teamwork, and achieve project success.</p>
+    </div>
+</footer>
+
+</html>
